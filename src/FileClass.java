@@ -9,5 +9,11 @@ public class FileClass {
         File file1 = new File("new.txt");
         boolean created = file1.createNewFile();
         if(created) System.out.println("New File Created");
+
+        File dir = new File("myDir");
+        dir.mkdir();
+
+        File dirs = new File("a/b/c");
+        dirs.mkdirs();
     }
 }
