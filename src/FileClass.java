@@ -5,6 +5,14 @@ public class FileClass {
     public static void main(String[] args) throws IOException {
         File file = new File("C:/xampp/htdocs/movie_db/index.php");
         if(file.exists()) System.out.println("Available!!!");
+        System.out.println(file.getName());
+        System.out.println(file.getPath());
+        System.out.println(file.getAbsolutePath());
+        System.out.println(file.lastModified());
+        System.out.println(file.length());
+        System.out.println(file.canRead());
+        System.out.println(file.canWrite());
+        System.out.println(file.canExecute());
 
         File file1 = new File("new.txt");
         boolean created = file1.createNewFile();
